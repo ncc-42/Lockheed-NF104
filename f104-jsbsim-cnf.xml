@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+Lockheed NF 104 simulation config.
+
+2008-08-08 Erik Hofman
+************************************************************************
+-->
+
+<PropertyList include="nf104-base.xml">
+
+  <sim>
+
+    <description>Lockheed F 104C (JSBSim)</description>
+    <flight-model>jsb</flight-model>
+    <aero>f104</aero>
+
+  </sim>
+
+</PropertyList>

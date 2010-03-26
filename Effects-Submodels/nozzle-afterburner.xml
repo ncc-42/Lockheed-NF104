@@ -1,0 +1,567 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+<path>nozzle-afterburner.ac</path>
+
+<!--***metal effects***-->
+
+<animation>
+	<type>noshadow</type>
+		<object-name>afterburner1</object-name>
+		<object-name>afterburner2</object-name>
+		<object-name>afterburner3</object-name>
+		<object-name>afterburner4</object-name>
+		<object-name>T-P1</object-name>
+		<object-name>T-P2</object-name>
+		<object-name>T-P3</object-name>
+		<object-name>T-P4</object-name>
+		<object-name>T-P5</object-name>
+		<object-name>T-P6</object-name>
+		<object-name>T-P7</object-name>
+		<object-name>T-P8</object-name>
+		<object-name>T-P9</object-name>
+		<object-name>T-P10</object-name>
+		<object-name>T-P11</object-name>
+		<object-name>T-P12</object-name>
+		<object-name>T-P13</object-name>
+		<object-name>T-P14</object-name>
+		<object-name>T-P15</object-name>
+		<object-name>T-P16</object-name>
+		<object-name>T-P17</object-name>
+		<object-name>T-P18</object-name>
+		<object-name>T-P19</object-name>
+		<object-name>T-P20</object-name>
+		<object-name>T-P21</object-name>
+		<object-name>T-P22</object-name>
+		<object-name>T-P23</object-name>
+		<object-name>T-P24</object-name>
+</animation>
+
+<animation>
+	<type>shader</type>
+	<shader>chrome</shader>
+	<texture>Aircraft/Lockheed-NF104/Models/dark-metal.png</texture>
+		<object-name>T-P1</object-name>
+		<object-name>T-P2</object-name>
+		<object-name>T-P3</object-name>
+		<object-name>T-P4</object-name>
+		<object-name>T-P5</object-name>
+		<object-name>T-P6</object-name>
+		<object-name>T-P7</object-name>
+		<object-name>T-P8</object-name>
+		<object-name>T-P9</object-name>
+		<object-name>T-P10</object-name>
+		<object-name>T-P11</object-name>
+		<object-name>T-P12</object-name>
+		<object-name>T-P13</object-name>
+		<object-name>T-P14</object-name>
+		<object-name>T-P15</object-name>
+		<object-name>T-P16</object-name>
+		<object-name>T-P17</object-name>
+		<object-name>T-P18</object-name>
+		<object-name>T-P19</object-name>
+		<object-name>T-P20</object-name>
+		<object-name>T-P21</object-name>
+		<object-name>T-P22</object-name>
+		<object-name>T-P23</object-name>
+		<object-name>T-P24</object-name>
+</animation>
+
+<!--***nozzle petals***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P1</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.109311</y1-m>
+		<z1-m>-0.113513</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.105675</y2-m>
+		<z2-m>-0.113547</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P2</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.105614</y1-m>
+		<z1-m>-0.113557</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.291515</y2-m>
+		<z2-m>-0.220540</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P3</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.291466</y1-m>
+		<z1-m>-0.220598</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.398508</y2-m>
+		<z2-m>-0.405839</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P4</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.398478</y1-m>
+		<z1-m>-0.405882</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.398478</y2-m>
+		<z2-m>-0.620368</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P5</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.398519</y1-m>
+		<z1-m>-0.620419</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.291463</y2-m>
+		<z2-m>-0.806164</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P6</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.291463</y1-m>
+		<z1-m>-0.806255</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.105718</y2-m>
+		<z2-m>-0.913202</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P7</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.105718</y1-m>
+		<z1-m>-0.913202</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.109423</y2-m>
+		<z2-m>-0.913202</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P8</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.109356</y1-m>
+		<z1-m>-0.913269</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.295157</y2-m>
+		<z2-m>-0.806199</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P9</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.295157</y1-m>
+		<z1-m>-0.806199</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.402159</y2-m>
+		<z2-m>-0.620399</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P10</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.402159</y1-m>
+		<z1-m>-0.620399</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.402159</y2-m>
+		<z2-m>-0.405859</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P11</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.402226</y1-m>
+		<z1-m>-0.405926</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.295223</y2-m>
+		<z2-m>-0.220594</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P12</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.295223</y1-m>
+		<z1-m>-0.220527</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.109440</y2-m>
+		<z2-m>-0.113612</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P13</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.209219</y1-m>
+		<z1-m>-0.155109</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.001518</y2-m>
+		<z2-m>-0.099456</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P14</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.001517</y1-m>
+		<z1-m>-0.099456</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.205645</y2-m>
+		<z2-m>-0.154740</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P15</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.205644</y1-m>
+		<z1-m>-0.154741</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.356971</y2-m>
+		<z2-m>-0.306029</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P16</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.356971</y1-m>
+		<z1-m>-0.306029</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.412496</y2-m>
+		<z2-m>-0.513251</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P17</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.412496</y1-m>
+		<z1-m>-0.513251</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.357215</y2-m>
+		<z2-m>-0.720413</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P18</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.357216</y1-m>
+		<z1-m>-0.720413</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>-0.205450</y2-m>
+		<z2-m>-0.871871</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P19</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>-0.205450</y1-m>
+		<z1-m>-0.871870</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.002251</y2-m>
+		<z2-m>-0.927523</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P20</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.002251</y1-m>
+		<z1-m>-0.927524</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.209413</y2-m>
+		<z2-m>-0.872241</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P21</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.209413</y1-m>
+		<z1-m>-0.872241</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.360873</y2-m>
+		<z2-m>-0.720474</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P22</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.360873</y1-m>
+		<z1-m>-0.720474</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.416398</y2-m>
+		<z2-m>-0.513252</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P23</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.416398</y1-m>
+		<z1-m>-0.513253</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.360984</y2-m>
+		<z2-m>-0.306569</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>T-P24</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>-10</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+	</interpolation>
+	<axis> 
+		<x1-m>6.262987</x1-m>
+		<y1-m>0.360985</y1-m>
+		<z1-m>-0.306568</z1-m>
+		<x2-m>6.262987</x2-m>
+		<y2-m>0.209219</y2-m>
+		<z2-m>-0.155109</z2-m>
+	</axis>
+</animation>
+
+<!--***internal flame effects***-->
+
+<animation>
+		<type>select</type>
+		<object-name>afterburner1</object-name>
+		<object-name>afterburner2</object-name>
+		<object-name>afterburner3</object-name>
+		<object-name>afterburner4</object-name>
+		<condition>
+				<property>/engines/engine[0]/augmentation</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>spin</type>
+		<object-name>afterburner1</object-name>
+		<object-name>afterburner2</object-name>
+		<property>engines/engine[0]/n2</property>
+		<factor>-1</factor>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0.001860</y-m>
+		<z-m>-0.513430</z-m>
+	</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+</animation>
+
+<animation>
+		<type>spin</type>
+		<object-name>afterburner3</object-name>
+		<property>engines/engine[0]/n2</property>
+		<factor>1</factor>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0.001860</y-m>
+		<z-m>-0.513430</z-m>
+	</center>
+		<axis>
+			<x>1</x>
+		</axis>
+</animation>
+
+<animation>
+		<type>spin</type>
+		<object-name>afterburner4</object-name>
+		<property>engines/engine[0]/n2</property>
+		<factor>10</factor>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0.001860</y-m>
+		<z-m>-0.513430</z-m>
+	</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+</animation>
+
+</PropertyList>

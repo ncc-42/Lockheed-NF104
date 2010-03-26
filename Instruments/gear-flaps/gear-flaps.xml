@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!--F-104C gear and flaps panel--> 
+
+<path>gear-flaps.ac</path>
+
+<!--***GEAR***-->
+
+	<!--***nose gear***-->
+
+<animation>
+	<type>select</type>
+	<object-name>nose-on</object-name>
+	<condition>
+		<equals>
+			<property>gear/gear[0]/position-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>nose-off</object-name>
+	<condition>
+		<or>
+			<equals>
+				<property>gear/gear[0]/position-norm</property>
+				<value>0</value>
+			</equals>
+			<not-equals>
+				<property>gear/gear[0]/position-norm</property>
+				<value>1</value>
+			</not-equals>
+		</or>
+	</condition>
+</animation>
+
+	<!--***right rear***-->
+
+<animation>
+	<type>select</type>
+	<object-name>right-main-on</object-name>
+	<condition>
+		<equals>
+			<property>gear/gear[2]/position-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>right-main-off</object-name>
+	<condition>
+		<or>
+			<equals>
+				<property>gear/gear[2]/position-norm</property>
+				<value>0</value>
+			</equals>
+			<not-equals>
+				<property>gear/gear[2]/position-norm</property>
+				<value>1</value>
+			</not-equals>
+		</or>
+	</condition>
+</animation>
+
+	<!--***left gear***-->
+
+<animation>
+	<type>select</type>
+	<object-name>left-main-on</object-name>
+	<condition>
+		<equals>
+			<property>gear/gear[1]/position-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>left-main-off</object-name>
+	<condition>
+		<or>
+			<equals>
+				<property>gear/gear[1]/position-norm</property>
+				<value>0</value>
+			</equals>
+			<not-equals>
+				<property>gear/gear[1]/position-norm</property>
+				<value>1</value>
+			</not-equals>
+		</or>
+	</condition>
+</animation>
+
+<!--***FLAPS AND SLATS***-->
+
+	<!--***LE slats***-->
+
+<animation>
+	<type>select</type>
+	<object-name>LE-up</object-name>
+	<condition>
+		<equals>
+			<property>/surface-positions/flap-pos-norm</property>
+			<value>0</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>LE-half</object-name>
+	<condition>
+		<equals>
+			<property>/surface-positions/flap-pos-norm</property>
+			<value>.3</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>LE-down</object-name>
+	<condition>
+		<equals>
+			<property>/surface-positions/flap-pos-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>LE-intermediate</object-name>
+	<condition>
+		<or>
+			<not-equals>
+				<property>/surface-positions/flap-pos-norm</property>
+				<value>0</value>
+			</not-equals>
+			<not-equals>
+				<property>/surface-positions/flap-pos-norm</property>
+				<value>.3</value>
+			</not-equals>
+			<not-equals>
+				<property>/surface-positions/flap-pos-norm</property>
+				<value>1</value>
+			</not-equals>
+		</or>
+	</condition>
+</animation>
+
+	<!--***TE flaps***-->
+
+<animation>
+	<type>select</type>
+	<object-name>TE-up</object-name>
+	<condition>
+		<equals>
+			<property>/surface-positions/flap-pos-norm</property>
+			<value>0</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>TE-half</object-name>
+	<condition>
+		<equals>
+			<property>/surface-positions/flap-pos-norm</property>
+			<value>.3</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>TE-down</object-name>
+	<condition>
+		<equals>
+			<property>/surface-positions/flap-pos-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>TE-intermediate</object-name>
+	<condition>
+		<or>
+			<not-equals>
+				<property>/surface-positions/flap-pos-norm</property>
+				<value>0</value>
+			</not-equals>
+			<not-equals>
+				<property>/surface-positions/flap-pos-norm</property>
+				<value>.3</value>
+			</not-equals>
+			<not-equals>
+				<property>/surface-positions/flap-pos-norm</property>
+				<value>1</value>
+			</not-equals>
+		</or>
+	</condition>
+</animation>
+
+<!--***stabilizer takeoff trim indicator***-->
+
+<animation>
+	<type>select</type>
+	<object-name>stab-on</object-name>
+	<condition>
+			<equals>
+				<property>/controls/flight/elevator-trim</property>
+				<value>-.175</value>
+			</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>stab-off</object-name>
+	<condition>
+			<not-equals>
+				<property>/controls/flight/elevator-trim</property>
+				<value>-.175</value>
+			</not-equals>
+	</condition>
+</animation>
+
+<!--***aileron takeoff trim indicator***-->
+
+<animation>
+	<type>select</type>
+	<object-name>ail-on</object-name>
+	<condition>
+			<equals>
+				<property>/controls/flight/aileron-trim</property>
+				<value>0</value>
+			</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>ail-off</object-name>
+	<condition>
+			<not-equals>
+				<property>/controls/flight/aileron-trim</property>
+				<value>0</value>
+			</not-equals>
+	</condition>
+</animation>
+
+<!--***drag chute handle***-->
+
+<animation>
+	<type>translate</type>
+	<object-name>drag-chute-handle</object-name>
+	<property>/fdm/jsbsim/systems/chute/deploy</property>
+	<factor>.02</factor>
+	<axis>
+		<x>1</x>
+	</axis>
+</animation>
+
+<!--***gunsight pipper illumination***-->
+
+<animation> 
+	<type>rotate</type>
+	<object-name>illum-knob</object-name>
+	<property>/controls/lighting/gunsight</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>1</ind><dep>120</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>0</x-m>
+		<y-m>-0.027287</y-m>
+		<z-m>-0.046623</z-m>
+	</center>
+	<axis>
+		<x>-1</x>
+	</axis>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>dim</object-name>
+	<visible>false</visible>
+	<action>
+		<name>small decrease</name>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/gunsight</property>
+			<step>-.1</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>false</wrap>
+		</binding>
+	</action>
+	<action>
+		<name>large decrease</name>
+		<button>1</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/gunsight</property>
+			<step>-.5</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>false</wrap>
+		</binding>
+	</action>
+</animation>   
+
+<animation>
+	<type>pick</type>
+	<object-name>bright</object-name>
+	<visible>false</visible>
+	<action>
+		<name>small increase</name>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/gunsight</property>
+			<step>.1</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>false</wrap>
+		</binding>
+	</action>
+	<action>
+		<name>large increase</name>
+		<button>1</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/gunsight</property>
+			<step>.5</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>false</wrap>
+		</binding>
+	</action>
+</animation>   
+
+<!--***LoD***-->
+
+<animation> 
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!--F-104C left forward panel--> 
+
+<path>left-fwd-panel.ac</path>
+
+
+<!--***external stores (tip tanks) jettison***-->
+
+<animation>
+	<type>pick</type>
+	<object-name>button</object-name>
+	<visible>true</visible>
+	<action>
+		<name>jettison-tip-tanks</name>
+		<button>0</button>
+		<binding>
+			<command>property-assign</command>
+			<property>fdm/jsbsim/systems/armament/tip-tanks/release</property>
+			<value>1</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>consumables/fuel[0]/tank[1]/level-gal_us</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-assign</command>
+			<property>consumables/fuel[0]/tank[2]/level-gal_us</property>
+			<value>0</value>
+		</binding>
+	</action>
+</animation>
+
+<!--***LoD***-->
+
+<animation> 
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

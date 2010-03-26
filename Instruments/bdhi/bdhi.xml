@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+
+<!--**F-104C bearing distance heading indicator***-->
+
+<PropertyList>
+
+<path>bdhi.ac</path>
+
+<!--***rotations***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>face</object-name>
+	<object-name>hdg-bug</object-name>
+	<property>/orientation/heading-magnetic-deg</property>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+	<!--***VOR Needle***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>needle-1</object-name>
+	<property>orientation/heading-magnetic-deg</property>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>needle-1</object-name>
+	<property>instrumentation/nav[1]/radials/reciprocal-radial-deg</property>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+	</center>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+	<!--***TACAN Needle***	-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>needle-2</object-name>
+	<property>/orientation/heading-deg</property>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>needle-2</object-name>
+	<property>/instrumentation/tacan/indicated-bearing-true-deg</property>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+	</center>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!--***heading bug set***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>hdg-knob</object-name>
+	<property>/autopilot/settings/heading-bug-deg</property>
+	<center>
+		<x-m>0.0</x-m>
+		<y-m>0.032674</y-m>
+		<z-m>-0.032995</z-m>
+	</center>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation> 
+	<type>rotate</type>
+	<object-name>hdg-bug</object-name>
+	<property>/autopilot/settings/heading-bug-deg</property>
+	<axis> 
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>hdg-dec</object-name>
+	<visible>false</visible>
+	<action>
+		<name>small decrease</name>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/autopilot/settings/heading-bug-deg</property>
+			<step>-1</step>
+			<min>0</min>
+			<max>360</max>
+			<wrap>1</wrap>
+		</binding>
+	</action>
+	<action>
+		<name>large decrease</name>
+		<button>1</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/autopilot/settings/heading-bug-deg</property>
+			<step>-5</step>
+			<min>0</min>
+			<max>360</max>
+			<wrap>1</wrap>
+		</binding>
+	</action>
+</animation>   
+
+<animation>
+	<type>pick</type>
+	<object-name>hdg-inc</object-name>
+	<visible>false</visible>
+	<action>
+		<name>small increase</name>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/autopilot/settings/heading-bug-deg</property>
+			<step>1</step>
+			<min>0</min>
+			<max>360</max>
+			<wrap>1</wrap>
+		</binding>
+	</action>
+	<action>
+		<name>large increase</name>
+		<button>1</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/autopilot/settings/heading-bug-deg</property>
+			<step>5</step>
+			<min>0</min>
+			<max>360</max>
+			<wrap>1</wrap>
+		</binding>
+	</action>
+</animation>
+
+<!--***DME***-->
+
+<animation>
+	<type>textranslate</type>
+	<object-name>dme-1</object-name>
+	<property>/instrumentation/tacan/indicated-distance-nm</property>
+	<factor>0.001</factor>
+	<offset>-100</offset>
+	<step>100</step>
+	<scroll>1</scroll>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>dme-2</object-name>
+	<property>/instrumentation/tacan/indicated-distance-nm</property>
+	<factor>0.01</factor>
+    <offset>-10</offset>
+	<step>10</step>
+	<scroll>1</scroll>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>dme-3</object-name>
+	<property>/instrumentation/tacan/indicated-distance-nm</property>
+	<factor>0.1</factor>
+    <offset>-1</offset>
+	<step>1</step>
+	<scroll>1</scroll>
+	<axis>
+		<x>0</x>
+		<y>-1</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!-- *** LoD *** -->
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>
+
+

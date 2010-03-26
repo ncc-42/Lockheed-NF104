@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!--F-104C right forward panel--> 
+
+<path>right-fwd-panel.ac</path>
+
+<!--***LoD***-->
+
+<animation> 
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

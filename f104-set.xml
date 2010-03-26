@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="f104-jsbsim-cnf.xml">
+
+  <sim>
+    <description>Lockheed F-104</description>
+    <author>Erik Hofman (FDM), Emmanuel BARANGER, Kent Esbenshade (3D)</author>
+<!--
+    <model>
+      <path>Aircraft/Lockheed-NF104/Models/F-104C.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+-->
+  </sim>
+
+  <nasal>
+    <Lockheed-NF104>
+      <file>Aircraft/Lockheed-NF104/Nasal/tire-rotation.nas</file>
+      <file>Aircraft/Lockheed-NF104/Nasal/tire-smoke.nas</file>
+    </Lockheed-NF104>
+  </nasal>
+
+  <fdm>
+   <jsbsim>
+    <systems>
+     <canopy>
+      <command type="double">0</command>
+      <position type="double">0</position>
+     </canopy>
+     <NWS>
+      <engaged type="double">0</engaged>
+     </NWS>
+     <radar>
+      <range type="int">40</range>
+     </radar>
+     <tailhook>
+      <tailhook-cmd-norm type="double">0</tailhook-cmd-norm>
+     </tailhook>
+    </systems>
+   </jsbsim>
+  </fdm>
+
+</PropertyList>

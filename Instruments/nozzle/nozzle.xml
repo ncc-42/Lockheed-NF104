@@ -1,0 +1,39 @@
+<?xml version="1.1"?>
+
+<!--F-104C exhaust nozzle position indicator-->
+
+<PropertyList>
+
+ <path>nozzle.ac</path>
+
+<!--***rotation***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>needle</object-name>
+	<property>/engines/engine[0]/nozzle-pos-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>1</ind><dep>250</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+	</center>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!--  LoD  -->
+
+<animation> 
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

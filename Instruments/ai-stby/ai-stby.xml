@@ -1,0 +1,83 @@
+<?xml version="1.1"?>
+
+<!-- F-104C standby attitude indicator-->
+
+<PropertyList>
+
+<path>ai-stby.ac</path>
+
+<!--***rotations***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>attitude-sphere</object-name>
+	<object-name>bank-index1</object-name>
+	<property>orientation/roll-deg</property>
+	<center>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>  
+
+<animation>
+	<type>rotate</type>
+	<object-name>attitude-sphere</object-name>
+	<property>orientation/pitch-deg</property>
+	<center>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>  
+
+<animation>
+	<type>rotate</type>
+	<object-name>attitude-sphere</object-name>
+	<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+	<center>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>  
+
+<animation> 
+	<type>rotate</type>
+	<object-name>knob</object-name>
+	<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+	<factor>5</factor>
+    <center>
+      <x-m>0.0 </x-m>
+      <y-m>0.019515</y-m>
+      <z-m>-0.019372</z-m>
+    </center>
+	<axis> 
+		<x>-1</x>
+	</axis>
+</animation>
+
+<!-- *** LoD *** -->
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

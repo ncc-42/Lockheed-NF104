@@ -1,0 +1,42 @@
+<?xml version="1.1"?>
+
+<!--F-104C tip tanks-->
+
+<PropertyList>
+
+<path>tip-tanks.ac</path>
+
+<animation>
+	<type>noshadow</type>
+	<object-name>right-tip-tank</object-name>
+	<object-name>left-tip-tank</object-name>
+</animation>
+
+<animation>
+	<type>shader</type>
+	<shader>chrome</shader>
+	<texture>Aircraft/Lockheed-NF104/Models/med-metal.png</texture>
+	<object-name>right-tip-tank</object-name>
+	<object-name>left-tip-tank</object-name>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>right-tip-tank</object-name>
+	<object-name>left-tip-tank</object-name>
+	<condition>
+		<not>
+			<property>fdm/jsbsim/systems/armament/tip-tanks/release</property>
+		</not>
+	</condition>
+</animation>
+
+ <!-- *** LoD *** -->
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>12000</max-m>
+</animation>
+
+</PropertyList>

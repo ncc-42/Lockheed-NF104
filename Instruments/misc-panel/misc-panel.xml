@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--F-104C miscellaneous panel fixtures-->
+
+<PropertyList>
+
+  <path>misc-panel.ac</path>
+
+<!--***tailhook release***-->
+
+<animation>
+	<type>pick</type>
+	<object-name>tailhook-button</object-name>
+	<visible>true</visible>
+	<action>
+		<binding>
+			<command>property-toggle</command>
+			<property>fdm/jsbsim/systems/hook/tailhook-cmd-norm</property>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>tailhook-lens-off</object-name>
+	<condition>
+		<less-than>
+			<property>gear/tailhook/position-norm</property>
+			<value>1</value>
+		</less-than>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>tailhook-lens-on</object-name>
+	<condition>
+		<equals>
+			<property>gear/tailhook/position-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+</PropertyList>
+

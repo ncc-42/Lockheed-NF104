@@ -1,0 +1,35 @@
+<?xml version="1.1"?>
+
+<!--F-104C fuel-flow indicator-->
+
+<PropertyList>
+
+<path>flow.ac</path>
+
+<!--***rotation***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>needle</object-name>
+	<property>/engines/engine[0]/fuel-flow_pph</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>3000</ind><dep>240</dep></entry>
+		<entry><ind>12000</ind><dep>330</dep></entry>
+	</interpolation>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!--  LoD  -->
+
+<animation> 
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

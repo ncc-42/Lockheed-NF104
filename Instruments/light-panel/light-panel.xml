@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--F-104C light panel-->
+
+<PropertyList>
+
+  <path>light-panel.ac</path>
+
+<!--instrument lights-->
+
+<animation> 
+	<type>rotate</type>
+	<object-name>instrument-lights</object-name>
+	<property>/controls/lighting/instruments-norm</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>1</ind><dep>300</dep></entry>
+	</interpolation>
+	<center>
+		<x-m>-0.035045</x-m>
+		<y-m>-0.034999</y-m>
+		<z-m>0</z-m>
+	</center>
+	<axis>
+		<z>-1</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>instr-lights-dec</object-name>
+	<visible>false</visible>
+	<action>
+		<name>small decrease</name>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/instruments-norm</property>
+			<step>-.1</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>false</wrap>
+		</binding>
+	</action>
+	<action>
+		<name>large decrease</name>
+		<button>1</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/instruments-norm</property>
+			<step>-.5</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>false</wrap>
+		</binding>
+	</action>
+</animation>   
+
+<animation>
+	<type>pick</type>
+	<object-name>instr-lights-inc</object-name>
+	<visible>false</visible>
+	<action>
+		<name>small increase</name>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/instruments-norm</property>
+			<step>.1</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>false</wrap>
+		</binding>
+	</action>
+	<action>
+		<name>large increase</name>
+		<button>1</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/controls/lighting/instruments-norm</property>
+			<step>.5</step>
+			<min>0</min>
+			<max>1</max>
+			<wrap>false</wrap>
+		</binding>
+	</action>
+</animation>   
+
+<!--  LoD  -->
+
+<animation> 
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>
