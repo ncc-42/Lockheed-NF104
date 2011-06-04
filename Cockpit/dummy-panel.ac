@@ -5864,7 +5864,7 @@ kids 0
 OBJECT poly
 name "shaft"
 loc -0.0637551 0.0410589 0.425584
-texture "C:/Users/Kent/Kent's Data/FlightGear/Modifications/F-86/Full Set/F-86/Instruments/Textures/brushed_alloy.rgb"
+texture "brushed_alloy.rgb"
 crease 45.000000
 numvert 12
 -0.0267092 -0.0044609 -0.00320017
