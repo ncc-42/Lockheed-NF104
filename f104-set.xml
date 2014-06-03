@@ -5,6 +5,12 @@
   <sim>
     <description>Lockheed F-104</description>
     <author>Erik Hofman (FDM), Emmanuel BARANGER, Kent Esbenshade (3D)</author>
+    <rating>
+      <FDM type="int">3</FDM>
+      <systems type="int">0</systems>
+      <cockpit type="int">3</cockpit>
+      <model type="int">5</model>
+    </rating>
 <!--
     <model>
       <path>Aircraft/Lockheed-NF104/Models/F-104C.xml</path>
@@ -38,6 +44,11 @@
      <tailhook>
       <tailhook-cmd-norm type="double">0</tailhook-cmd-norm>
      </tailhook>
+     <armament>
+      <droptanks>
+        <release>0</release>
+      </droptanks>
+    </armament>
     </systems>
    </jsbsim>
   </fdm>
