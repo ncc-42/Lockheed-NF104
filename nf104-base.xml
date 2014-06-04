@@ -58,7 +58,7 @@
       <disable>1</disable>
     </replay>
 
-    <menubar include="Dialogs/nf104-menu.xml"/>
+    <!--<menubar include="Dialogs/nf104-menu.xml"/>-->
 
   </sim>
 

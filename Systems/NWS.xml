@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 
 <system name="NWS">
-	<property>systems/NWS/engaged</property>
 	<channel name="Nose Wheel Steering">
 		<scheduled_gain name="systems/NWS/steer-cmd">
 		<input>fcs/rudder-cmd-norm</input>
