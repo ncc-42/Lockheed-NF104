@@ -51,7 +51,7 @@
    <vtailarea unit="FT2">43.70</vtailarea>
    <vtailarm  unit="FT" >23.23</vtailarm>
    <location name="AERORP" unit="IN">
-     <x>319.5</x>
+     <x>393</x>
      <y>0.0</y>
      <z>-35.08</z>
    </location>
@@ -76,7 +76,7 @@
    <iyz unit="SLUG*FT2">0</iyz>
    <emptywt unit="LBS" >12760</emptywt>
    <location name="CG" unit="IN">
-     <x>319.5</x>
+     <x>393</x>
      <y>0.0</y>
      <z>-35.08</z>
    </location>
