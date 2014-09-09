@@ -1,0 +1,302 @@
+<?xml version = '1.1'?>
+
+<PropertyList>
+
+<!--F-104C instrument landing system (ILS)-->
+
+<path>ils.ac</path>
+
+<!--***needles***-->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>GSNeedle</object-name>
+		<property>instrumentation/nav[0]/gs-needle-deflection</property>
+  <min>-10.0</min>
+  <max>10.0</max>
+  <interpolation>
+  <entry><ind>-10.0</ind><dep>35</dep></entry>
+  <entry><ind>0.0</ind><dep>0</dep></entry>
+   <entry><ind>10.0</ind><dep>-35</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>-0.027542</y-m>
+   <z-m>-0.006532</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+	</animation>
+
+	<animation>
+	<type>rotate</type>
+	<object-name>LOCNeedle</object-name>
+	<property>instrumentation/nav[0]/heading-needle-deflection</property>
+  <min>-10.0</min>
+  <max>10.0</max>
+  <interpolation>
+   <entry><ind>-10.0</ind><dep>35</dep></entry>
+   <entry><ind>0.0</ind><dep>0</dep></entry>
+   <entry><ind>10.0</ind><dep>-35</dep></entry>
+  </interpolation>
+   <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.021265</z-m>
+   </center>
+   <axis>
+    <x>-1</x>
+    <y>0</y>
+    <z>0</z>
+   </axis>
+	</animation>
+
+<!--***flags***-->
+
+ <animation>
+  <type>select</type>
+  <object-name>GSFlag</object-name>
+  <condition>
+   <and>
+    <or>
+     <equals>
+      <property>instrumentation/nav/in-range[0]</property>
+      <value type="bool">false</value>
+     </equals>
+     <equals>
+      <property>instrumentation/nav/has-gs[0]</property>
+      <value type="bool">false</value>
+     </equals>
+    </or>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>LOCFlag</object-name>
+  <condition>
+   <equals>
+    <property>instrumentation/nav[0]/in-range</property>
+    <value type="bool">false</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!--***to-from***-->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>to-from</object-name>
+		<property>instrumentation/ils/to-from</property>
+    	<factor>1</factor>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.006532</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!--***course set***-->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>course-set-knob</object-name>
+    <property>/instrumentation/nav[0]/radials/selected-deg</property>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>-0.033041</y-m>
+      <z-m>-0.033643</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>course-set-L</object-name>
+  <visible>false</visible>
+  <action>
+    <name>small decrease</name>
+    <button>0</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+    <property>/instrumentation/nav[0]/radials/selected-deg</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+  <action>
+    <name>large decrease</name>
+    <button>1</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+    <property>/instrumentation/nav[0]/radials/selected-deg</property>
+      <step>-5</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+ </animation>   
+
+ <animation>
+  <type>pick</type>
+  <object-name>course-set-R</object-name>
+  <visible>false</visible>
+  <action>
+    <name>small decrease</name>
+    <button>0</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+    <property>/instrumentation/nav[0]/radials/selected-deg</property>
+      <step>1</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+  <action>
+    <name>large decrease</name>
+    <button>1</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+    <property>/instrumentation/nav[0]/radials/selected-deg</property>
+      <step>5</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+ </animation>   
+
+<!-- course digital display -->
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>course-drum-1</object-name>
+    <property>/instrumentation/nav[0]/radials/selected-deg</property>
+    <factor>0.1</factor>
+    <offset>-1</offset>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>course-drum-2</object-name>
+    <property>/instrumentation/nav[0]/radials/selected-deg</property>
+    <factor>0.01</factor>
+    <offset>-10</offset>
+    <step>10</step>
+    <scroll>0.5</scroll>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>course-drum-3</object-name>
+    <property>/instrumentation/nav[0]/radials/selected-deg</property>
+    <factor>0.001</factor>
+    <offset>-100</offset>
+    <step>100</step>
+    <scroll>0.5</scroll>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+<!--***marker beacon***-->
+
+  <animation>
+    <type>select</type>
+    <object-name>lens-off</object-name>
+	<condition>
+	<and>
+		<equals>
+			<property>instrumentation/marker-beacon/inner</property>
+      		<value type="bool">false</value>
+		</equals>
+		<equals>
+			<property>instrumentation/marker-beacon/middle</property>
+      		<value type="bool">false</value>
+		</equals>
+		<equals>
+			<property>instrumentation/marker-beacon/outer</property>
+      		<value type="bool">false</value>
+		</equals>
+	</and>
+	</condition>
+  </animation>    
+
+  <animation>
+    <type>select</type>
+    <object-name>lens-on</object-name>
+	<condition>
+		<or>
+		<equals>
+			<property>instrumentation/marker-beacon/inner</property>
+      		<value type="bool">true</value>
+		</equals>
+		<equals>
+			<property>instrumentation/marker-beacon/middle</property>
+      		<value type="bool">true</value>
+		</equals>
+		<equals>
+			<property>instrumentation/marker-beacon/outer</property>
+      		<value type="bool">true</value>
+		</equals>
+		</or>
+	</condition>
+  </animation>    
+
+<!-- *** LoD *** -->
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

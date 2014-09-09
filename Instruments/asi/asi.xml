@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+
+<!--F-104C airspeed/mach indicator-->
+
+<PropertyList>
+
+<path>asi.ac</path>
+
+<!--**rotation**-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>mach-face</object-name>
+	<property>velocities/airspeed-kt</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>100</ind><dep>55</dep></entry>
+		<entry><ind>150</ind><dep>110</dep></entry>
+		<entry><ind>200</ind><dep>160</dep></entry>
+		<entry><ind>300</ind><dep>210</dep></entry>
+		<entry><ind>400</ind><dep>250</dep></entry>
+		<entry><ind>500</ind><dep>285</dep></entry>
+		<entry><ind>700</ind><dep>335</dep></entry>
+		<entry><ind>850</ind><dep>365</dep></entry>
+	</interpolation>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>mach-face</object-name>
+	<property>velocities/mach</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>.4</ind><dep>20</dep></entry>
+		<entry><ind>2.1</ind><dep>360</dep></entry>
+	</interpolation>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>needle</object-name>
+	<object-name>mach-cover</object-name>
+	<property>velocities/airspeed-kt</property>
+ 	<interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>100</ind><dep>55</dep></entry>
+		<entry><ind>150</ind><dep>110</dep></entry>
+		<entry><ind>200</ind><dep>160</dep></entry>
+		<entry><ind>300</ind><dep>210</dep></entry>
+		<entry><ind>400</ind><dep>250</dep></entry>
+		<entry><ind>500</ind><dep>285</dep></entry>
+		<entry><ind>700</ind><dep>335</dep></entry>
+		<entry><ind>850</ind><dep>365</dep></entry>
+	</interpolation>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>appch-spd</object-name>
+	<property>/velocities/approach-speed</property>
+ 	<interpolation>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>100</ind><dep>55</dep></entry>
+		<entry><ind>150</ind><dep>110</dep></entry>
+		<entry><ind>200</ind><dep>160</dep></entry>
+		<entry><ind>300</ind><dep>210</dep></entry>
+		<entry><ind>400</ind><dep>250</dep></entry>
+		<entry><ind>500</ind><dep>285</dep></entry>
+		<entry><ind>700</ind><dep>335</dep></entry>
+		<entry><ind>850</ind><dep>365</dep></entry>
+	</interpolation>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<!-- *** LoD *** -->
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

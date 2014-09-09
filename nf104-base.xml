@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>0.1 Alpha</status>
+
+    <fuel-fraction>0.75</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Lockheed-NF104/nf104-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/Lockheed-NF104/Sounds/nf104-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Lockheed-NF104/Models/F-104C.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+    <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay>
+
+    <!-- Flap settings -->
+    <flaps>
+        <setting>0</setting>
+        <setting>0.3</setting>
+        <setting>1</setting>
+    </flaps>
+
+    <weight n="0">
+      <name>Crew</name>
+      <weight-lb>180</weight-lb> 
+      <max-lb>400</max-lb>
+      <min-lb>180</min-lb>
+    </weight>
+
+    <help>
+      <title>Convair F 106 Delta Dart</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
+
+    <replay>
+      <disable>1</disable>
+    </replay>
+
+    <!--<menubar include="Dialogs/nf104-menu.xml"/>-->
+
+  </sim>
+
+  <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <running>true</running>
+    </engine>
+  </engines>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">2070</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <input>
+    <keyboard include="Nasal/nf104-keyboard.xml"/>
+  </input>
+
+</PropertyList>

@@ -1,0 +1,166 @@
+<?xml version="1.1"?>
+
+<!-- F-104C attitude indicator-->
+
+<PropertyList>
+
+<path>ai.ac</path>
+
+<!--***rotations***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>attitude-sphere</object-name>
+	<object-name>bank-index1</object-name>
+	<property>orientation/roll-deg</property>
+	<center>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+	</center>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>  
+
+<animation>
+	<type>rotate</type>
+	<object-name>attitude-sphere</object-name>
+	<property>orientation/pitch-deg</property>
+	<center>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>  
+
+<animation>
+	<type>rotate</type>
+	<object-name>attitude-sphere</object-name>
+	<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+	<center>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>1</y>
+		<z>0</z>
+	</axis>
+</animation>  
+
+<!--***adjust horizon offset***-->
+
+<animation> 
+	<type>rotate</type>
+	<object-name>knob</object-name>
+	<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+	<factor>5</factor>
+    <center>
+      <x-m>0.0 </x-m>
+      <y-m>0.031285</y-m>
+      <z-m>-0.031644</z-m>
+    </center>
+	<axis> 
+		<x>-1</x>
+	</axis>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>dec</object-name>
+	<visible>false</visible>
+	<action>
+		<name>small decrease</name>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+			<step>-.2</step>
+			<min>-10</min>
+			<max>10</max>
+			<wrap>0</wrap>
+		</binding>
+	</action>
+	<action>
+		<name>large decrease</name>
+		<button>1</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+			<step>-1</step>
+			<min>-10</min>
+			<max>10</max>
+			<wrap>0</wrap>
+		</binding>
+	</action>
+</animation>   
+
+<animation>
+	<type>pick</type>
+	<object-name>inc</object-name>
+	<visible>false</visible>
+	<action>
+		<name>small increase</name>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+			<step>.2</step>
+			<min>-10</min>
+			<max>10</max>
+			<wrap>0</wrap>
+		</binding>
+	</action>
+	<action>
+		<name>large increase</name>
+		<button>1</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+			<step>1</step>
+			<min>-10</min>
+			<max>10</max>
+			<wrap>0</wrap>
+		</binding>
+	</action>
+</animation>
+
+
+	<!--***reset to zero***-->
+
+<animation>
+	<type>pick</type>
+	<object-name>front</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>/instrumentation/attitude-indicator/horizon-offset-deg</property>
+			<value>0</value>
+		</binding>
+	</action>
+</animation>
+
+<!-- *** LoD *** -->
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

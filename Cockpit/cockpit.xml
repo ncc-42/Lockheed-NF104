@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>cockpit.ac</path>
+
+<!--***lighting***-->
+
+<animation>
+	<type>material</type>
+	<object-name>face</object-name>
+	<object-name>indicator</object-name>
+	<object-name>LE</object-name>
+	<object-name>TE</object-name>
+	<emission>
+		<red>1</red>
+		<green>0.25</green>
+		<blue>0.25</blue>
+		<factor-prop>/controls/lighting/instruments-norm</factor-prop>
+	</emission>
+</animation>    
+
+<!--***altimeter***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/alt/alt.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>-0.0844</y-m>
+		<z-m>0.234</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***attitude indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/ai/ai.xml</path>
+	<offsets>
+		<x-m>-0.518498</x-m>
+		<y-m>0.0844</y-m>
+		<z-m>0.320</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***attitude indicator, standby***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/ai-stby/ai-stby.xml</path>
+	<offsets>
+		<x-m>-0.508130</x-m>
+		<y-m>-0.1528</y-m>
+		<z-m>0.2820</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***airspeed indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/asi/asi.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>-0.0844</y-m>
+		<z-m>0.320</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***bearing-distance-heading indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/bdhi/bdhi.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.3282</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***cabin pressure indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/cab-press/cab-press.xml</path>
+	<offsets>
+		<x-m>-0.5049</x-m>
+		<y-m>0.1570</y-m>
+		<z-m>0.1092</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***canopy warning indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/can-warn/can-warn.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.2072</y-m>
+		<z-m>0.3090</z-m>
+		<roll-deg>-38.5</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***clock***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/clock/clock.xml</path>
+	<offsets>
+		<x-m>-0.5065</x-m>
+		<y-m>-0.1115</y-m>
+		<z-m>0.1163</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***compressor inlet temperature indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/cit/cit.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>-0.2053</y-m>
+		<z-m>0.2820</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***compressor inlet temperature warning (SLOW) light***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/cit-warn/cit-warn.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>-0.1454</y-m>
+		<z-m>0.3204</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***exhaust gas temperature indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/egt/egt.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.1622</y-m>
+		<z-m>0.2556</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***faceplate rheostat panel***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/faceplate/faceplate.xml</path>
+	<offsets>
+		<x-m>-0.491695</x-m>
+		<y-m>0.10821</y-m>
+		<z-m>0.04625</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***fire warning light 1***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/fire-warn/fire-warn1.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>-0.1857</y-m>
+		<z-m>0.3243</z-m>
+		<roll-deg>25</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***fire warning light 2***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/fire-warn/fire-warn2.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.2489</y-m>
+		<z-m>0.2319</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***fuel flow indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/fuel/flow.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.2175</y-m>
+		<z-m>0.2678</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***fuel quantity indicator, external***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/fuel/fuel2.xml</path>
+	<offsets>
+		<x-m>-0.4942</x-m>
+		<y-m>0.2169</y-m>
+		<z-m>0.0610</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***fuel quantity indicator, internal***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/fuel/fuel1.xml</path>
+	<offsets>
+		<x-m>-0.5055</x-m>
+		<y-m>0.2104</y-m>
+		<z-m>0.1140</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***gear, flap, and slat indicators***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/gear-flaps/gear-flaps.xml</path>
+	<offsets>
+		<x-m>-0.5026</x-m>
+		<y-m>-0.1837</y-m>
+		<z-m>0.0979</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***gear handle***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/gear-flaps/gear-handle.xml</path>
+	<offsets>
+		<x-m>-0.513257</x-m>
+		<y-m>-0.3925</y-m>
+		<z-m>0.039505</z-m>
+		<roll-deg>-23</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***g-meter***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/g-meter/g-meter.xml</path>
+	<offsets>
+		<x-m>-0.4950</x-m>
+		<y-m>-0.1106</y-m>
+		<z-m>0.0620</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***gunsight***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/gunsight/gunsight.xml</path>
+</model>
+
+<!--***hydraulic pressure 1***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/hyd-press/hyd-press1.xml</path>
+	<offsets>
+		<x-m>-0.508371</x-m>
+		<y-m>0.1177</y-m>
+		<z-m>0.1246</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***hydraulic pressure 2***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/hyd-press/hyd-press2.xml</path>
+	<offsets>
+		<x-m>-0.502373</x-m>
+		<y-m>0.1177</y-m>
+		<z-m>0.0973</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***instrument landing system (ILS)***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/ils/ils.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.24</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***left forward panel***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/left-fwd-panel/left-fwd-panel.xml</path>
+	<offsets>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***light panel***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/light-panel/light-panel.xml</path>
+	<offsets>
+		<x-m>0.23995</x-m>
+		<y-m>0.34697</y-m>
+		<z-m>-0.039695</z-m>
+		<roll-deg>23</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***mag-compass***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/mag-compass/mag-compass.xml</path>
+	<offsets>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***miscellaneous panel fixtures***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/misc-panel/misc-panel.xml</path>
+</model>
+
+<!--***nav aid indicators***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/nav-indic/nav-indic.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.0057</y-m>
+		<z-m>0.3781</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***nozzle position indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/nozzle/nozzle.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.1622</y-m>
+		<z-m>0.2009</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***oil pressure indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/oil/oil-press.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.2196</y-m>
+		<z-m>0.1988</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***oil quantity indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/oil/oil-quan.xml</path>
+	<offsets>
+		<x-m>-0.4926</x-m>
+		<y-m>0.1631</y-m>
+		<z-m>0.0509</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-12</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***radar***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/radar/radar.xml</path>
+	<offsets>
+		<x-m>-0.504584</x-m>
+		<y-m>0</y-m>
+		<z-m>0.102072</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>-16</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***right forward panel***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/right-fwd-panel/right-fwd-panel.xml</path>
+	<offsets>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***tachometer***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/tach/tach.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.1622</y-m>
+		<z-m>0.3103</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***turn-slip indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/turn-slip/turn-slip.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>-0.1606</y-m>
+		<z-m>0.2173</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***UHF frequency repeater***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/uhf/uhf.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>-0.2256</y-m>
+		<z-m>0.2093</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***vertical velocity indicator***-->
+
+<model>
+	<path>Aircraft/Lockheed-NF104/Instruments/vvi/vvi.xml</path>
+	<offsets>
+		<x-m>-0.490242</x-m>
+		<y-m>0.0844</y-m>
+		<z-m>0.234</z-m>
+		<roll-deg>0</roll-deg>
+		<pitch-deg>0</pitch-deg>
+		<heading-deg>0</heading-deg>
+	</offsets>
+</model>
+
+<!--***throttle motion***-->
+
+<animation>
+	<type>translate</type>
+	<object-name>throttle</object-name>
+	<property>/fdm/jsbsim/fcs/throttle-pos-norm</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-0.0626</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>throttle</object-name>
+	<property>/fdm/jsbsim/fcs/throttle-pos-norm</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.0238</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+</animation>
+
+<!--***gunsight pipper***-->
+
+<animation>
+	<type>select</type>
+	<object-name>reticle</object-name>
+	<condition>   
+		<and>
+			<greater-than-equals>
+				<property>orientation/side-slip-deg</property>  
+				<value>-2</value>				 
+			</greater-than-equals>
+			<less-than-equals>
+				<property>orientation/side-slip-deg</property>  
+				<value>2</value>				 
+			</less-than-equals>
+			<greater-than-equals>
+				<property>/accelerations/pilot/G</property>  
+				<value>-1</value>				 
+			</greater-than-equals>
+			<less-than-equals>
+				<property>/accelerations/pilot/G</property>  
+				<value>4</value>				 
+			</less-than-equals>
+		</and>
+	</condition>
+</animation>
+
+<animation>
+	<type>material</type>
+	<object-name>reticle</object-name>
+	<emission>
+		<red>.7</red>
+		<green>1.0</green>
+		<blue>0</blue>
+		<factor-prop>controls/lighting/gunsight</factor-prop>
+	</emission>
+</animation>
+
+<animation> 
+	<type>translate</type>
+	<object-name>reticle</object-name>
+	<property>orientation/side-slip-deg</property>
+	<interpolation>
+		<entry><ind>-2</ind><dep>0.075</dep></entry>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>2</ind><dep>-0.075</dep></entry>
+	</interpolation>
+	<axis> 
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation> 
+	<type>translate</type>
+	<object-name>reticle</object-name>
+	<property>/accelerations/pilot/G</property>
+	<interpolation>
+		<entry><ind>0</ind><dep>0.046</dep></entry>
+		<entry><ind>1</ind><dep>0</dep></entry>
+		<entry><ind>4</ind><dep>-0.14</dep></entry>
+	</interpolation>
+	<axis> 
+		<z>1</z>
+	</axis>
+</animation>
+
+<!--***tailhook release***-->
+
+<animation>
+	<type>pick</type>
+	<object-name>tailhook-button</object-name>
+	<visible>true</visible>
+	<action>
+		<binding>
+			<command>property-toggle</command>
+			<property>fdm/jsbsim/systems/hook/tailhook-cmd-norm</property>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>tailhook-lens-off</object-name>
+	<condition>
+		<less-than>
+			<property>gear/tailhook/position-norm</property>
+			<value>1</value>
+		</less-than>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>tailhook-lens-on</object-name>
+	<condition>
+		<equals>
+			<property>gear/tailhook/position-norm</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+</PropertyList>
+

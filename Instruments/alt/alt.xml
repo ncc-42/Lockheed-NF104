@@ -1,0 +1,181 @@
+<?xml version="1.1"?>
+
+<!-- F-104C altimeter -->
+
+<PropertyList>
+
+<path>alt.ac</path>
+
+<!--***rotations***-->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>warning-cover</object-name>
+		<property>/instrumentation/altimeter/indicated-altitude-ft</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>18000</ind><dep>61</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+ 	</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>needle1</object-name>
+  <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+  <factor>0.36</factor>  
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>needle2</object-name>
+  <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+  <factor>0.036</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>needle3</object-name>
+  <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+  <factor>0.0036</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>pressure-dial</object-name>
+  <property>/instrumentation/altimeter/setting-inhg</property>
+  <interpolation>
+   <entry><ind>28</ind><dep>-200</dep></entry>
+   <entry><ind>30</ind><dep>0</dep></entry>
+   <entry><ind>31.3</ind><dep>130</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+<!--***set barometric pressure***-->
+
+	<animation>
+        <type>pick</type>
+        <object-name>dec</object-name>
+        <visible>false</visible>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+	            <command>property-adjust</command>
+	            <property>instrumentation/altimeter/setting-inhg</property>
+	            <step>-0.01</step>
+	            <min>27.90</min>
+	            <max>31.40</max>
+	            <wrap>0</wrap>
+			</binding>
+		</action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>dec</object-name>
+        <visible>0</visible>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <binding>
+            <command>property-adjust</command>
+            <property>instrumentation/altimeter/setting-inhg</property>
+            <step>-0.1</step>
+            <min>27.90</min>
+            <max>31.40</max>
+            <wrap>0</wrap>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>inc</object-name>
+        <visible>0</visible>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+            <command>property-adjust</command>
+            <property>instrumentation/altimeter/setting-inhg</property>
+            <step>0.01</step>
+            <min>27.90</min>
+            <max>31.40</max>
+            <wrap>0</wrap>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>inc</object-name>
+        <visible>0</visible>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <binding>
+            <command>property-adjust</command>
+            <property>instrumentation/altimeter/setting-inhg</property>
+            <step>0.1</step>
+            <min>27.90</min>
+            <max>31.40</max>
+            <wrap>0</wrap>
+        </binding>
+        </action>
+    </animation>
+
+ <!-- *** LoD *** -->
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

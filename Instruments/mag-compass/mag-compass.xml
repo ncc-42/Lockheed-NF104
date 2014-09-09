@@ -1,0 +1,33 @@
+<?xml version="1.1"?>
+
+<!--F-104C magnetic compass-->
+
+<PropertyList>
+
+<path>mag-compass.ac</path>
+
+<!--***rotation***-->
+
+<animation>
+	<type>rotate</type>
+	<object-name>compass-ring</object-name>
+	<property>instrumentation/magnetic-compass/indicated-heading-deg</property>
+	<center>
+		<x-m>-0.500000</x-m>
+		<y-m>-0.201989</y-m>
+		<z-m>0</z-m>
+	</center> 
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!--***LoD***-->
+
+<animation>
+	<type>range</type>
+	<min-m>0</min-m>
+	<max-m>5</max-m>
+</animation>
+
+</PropertyList>

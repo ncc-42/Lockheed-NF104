@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <key n="32">
+    <name>space bar</name>
+    <desc>jettison tip tanks</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>fdm/jsbsim/systems/armament/tip-tanks/release</property>
+     <value>1</value>
+    </binding>
+    <binding>
+     <command>property-assign</command>
+     <property>consumables/fuel[0]/tank[1]/level-gal_us</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-assign</command>
+     <property>consumables/fuel[0]/tank[2]/level-gal_us</property>
+     <value>0</value>
+    </binding>
+  </key>
+
+  <key n="99">
+    <name>c</name>
+    <desc>Canopy toggle</desc>
+    <binding>
+     <command>property-toggle</command>
+     <property>fdm/jsbsim/systems/canopy/command</property>
+    </binding>
+  </key>
+
+  <key n="100">
+    <name>d</name>
+    <desc>Drag chute deploy</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>fdm/jsbsim/systems/chute/deploy</property>
+     <value type="int">1</value>
+    </binding>
+  </key>
+
+  <key n="106">
+    <name>j</name>
+    <desc>Drag chute jettison</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>fdm/jsbsim/systems/chute/deploy</property>
+     <value type="int">0</value>
+    </binding>
+    <binding>
+     <command>property-assign</command>
+     <property>controls/flight/chute_jettisoned</property>
+     <value type="int">1</value>
+    </binding>
+   </key>
+
+   <key n="109">
+     <name>m</name>
+     <desc>Nose wheel steering engage</desc>
+     <binding>
+      <command>property-assign</command>
+      <property>fdm/jsbsim/systems/NWS/engaged</property>
+      <value>1</value>
+     </binding>
+     <mod-up>
+      <binding>
+      <command>property-assign</command>
+      <property>fdm/jsbsim/systems/NWS/engaged</property>
+      <value>0</value>
+     </binding>
+    </mod-up>
+  </key>
+
+</PropertyList>
+
